@@ -23,6 +23,6 @@ Results will be stored in the `logs/` directory, and can be plotted with `script
 
 The weight visualization from Figure 1 can be reproduced by running
 ```
-python3 visualize_resnset.py path/to/logs/
+python3 visualize_resnet.py path/to/logs/
 ```
 where `path/to/logs` should be replaced with the directory storing results for the experiment whose network should be visualized.
