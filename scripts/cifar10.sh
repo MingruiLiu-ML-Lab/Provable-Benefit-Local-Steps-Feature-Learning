@@ -1,10 +1,11 @@
 dset="FeatureCIFAR"
 name="final"
 lr=0.01
-save_idx=97
+save_idx=0
 seeds=3
 bs=64
 feature_noise=0
+gpus=8
 
 augments=("1" "0")
 lrs=("0.01" "0.03")
@@ -30,6 +31,10 @@ for (( j=0; j<$seeds; j++ )); do
 
         bash run.sh ${save_idx}_${dset}_${name}/augment_${augment}_H_${dummy_H}/seed_${j} parallel_sgd $dset fedavg 1 1 $R $I $H $lr 1e8 1 0 1 $t $j $total_bs $augment $feature_noise &
         t=$((t+1))
+        if [ $t -ge $gpus ]; then
+            wait
+            t=0
+        fi
     done
 done
 wait

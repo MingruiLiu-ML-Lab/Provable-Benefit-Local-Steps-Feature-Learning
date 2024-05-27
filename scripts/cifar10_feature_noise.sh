@@ -1,6 +1,6 @@
 dset="FeatureCIFAR"
 name="noise"
-save_idx=101
+save_idx=1
 seeds=3
 bs=64
 augment=0
