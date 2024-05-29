@@ -26,3 +26,16 @@ The weight visualization from Figure 1 can be reproduced by running
 python3 visualize_resnet.py path/to/logs/
 ```
 where `path/to/logs` should be replaced with the directory storing results for the experiment whose network should be visualized.
+
+
+## Citation
+If you found this repository helpful, please cite our paper:
+```
+@inproceedings{bao2024provable,
+title={Provable Benefits of Local Steps in Heterogeneous Federated Learning for Neural Networks: A Feature Learning Perspective},
+author={Yajie Bao, Michael Crawshaw, Mingrui Liu},
+booktitle={41th International Conference on Machine Learning},
+year={2024}
+}
+
+```
