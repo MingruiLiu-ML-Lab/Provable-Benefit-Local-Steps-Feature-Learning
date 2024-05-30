@@ -8,7 +8,7 @@ Our work is motivated by an experimental finding of the CIFAR-10 task in the het
 ![](https://github.com/MingruiLiu-ML-Lab/Provable-Benefit-Local-Steps-Feature-Learning/blob/main/feature-comparison.png)
 
 
-Our synthetic data model relies on the feature noise components in feature learning. To evaluate Local SGD under real-world data with feature noise, we train with modified CIFAR-10 data that explicitly includes feature noise similar to our theoretical framework. Examples of the modified images are shown in the following figure. Each row shows a modified image for a different value of the feature noise magnitude $\rho$, ranging over $\rho \in \{0.0, 0.03125, 0.0625, 0.125, 0.25\}$. Each image contains slightly more noise than the previous row, but overall the images retain their original signal.
+Our synthetic data model relies on the feature noise components in feature learning. To evaluate Local SGD under real-world data with feature noise, we train with modified CIFAR-10 data that explicitly includes feature noise similar to our theoretical framework. Examples of the modified images are shown in the following figure. Each row shows a modified image for a different value of the feature noise magnitude $\rho$, ranging over {0.0, 0.03125, 0.0625, 0.125, 0.25}. Each image contains slightly more noise than the previous row, but overall the images retain their original signal.
 
 ![](https://github.com/MingruiLiu-ML-Lab/Provable-Benefit-Local-Steps-Feature-Learning/blob/main/noisy_images.png)
 
